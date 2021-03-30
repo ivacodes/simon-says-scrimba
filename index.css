@@ -21,7 +21,7 @@ body {
 .emoji {
   margin-right: 15px;
   padding: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 30px;
   cursor: pointer;
 }
@@ -31,11 +31,22 @@ body {
 }
 
 button {
-  background-color: #d8ac9c;
-  border: none;
-  padding: 10px;
+  font-size: 1rem;
   border-radius: 10px;
-  font-weight: bold;
+  font-weight: 700;
+  padding: 10px 15px;
+  box-shadow: 3px 3px 10px -4px #000;
+  border: none;
+}
+
+button:active {
+  box-shadow: none;
+  border: none;
+}
+
+button:focus {
+  border: none;
+  outline: none;
 }
 
 .result {
@@ -44,4 +55,11 @@ button {
 
 .result span {
   font-size: 50px;
+}
+
+.cat:active,
+.dog:active,
+.fish:active,
+.box:active {
+  background-color: #eac8af;
 }
